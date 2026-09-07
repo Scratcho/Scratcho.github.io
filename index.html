@@ -4,131 +4,133 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Jung Hyun Bae is a Robotics PhD student at Georgia Tech working on human-centered sensing, soft robotics, and intelligent health systems.">
-  <meta name="theme-color" content="#0d1b2a">
-  <title>Jung Hyun Bae — Robotics Researcher</title>
+  <meta name="theme-color" content="#173c70">
+  <title>Jung Hyun Bae | Robotics Researcher</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header" id="top">
-    <nav class="nav shell" aria-label="Main navigation">
-      <a class="wordmark" href="#top" aria-label="Jung Hyun Bae, home">JHB<span class="dot">.</span></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="shell nav" aria-label="Main navigation">
+      <a class="brand" href="#top">Jung Hyun Bae</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <div class="nav-links" id="nav-links">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" aria-label="Switch color theme"><span aria-hidden="true">◐</span></button>
+        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#activity">Activity</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="life.html">Life</a>
+        <a class="nav-cv" href="assets/documents/jung-hyun-bae-cv.pdf">CV ↗</a>
       </div>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="hero-art" aria-hidden="true"></div>
-      <div class="hero-shade" aria-hidden="true"></div>
-      <div class="shell hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Robotics · sensing · health</p>
-          <h1>Building machines that <em>understand</em> the human body.</h1>
-          <p class="lede">I’m Jung Hyun Bae, a Robotics PhD student at Georgia Tech. I design human-centered sensing systems, soft robotic devices, and experimental tools that turn subtle physical signals into useful insight.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↓</span></a>
-            <a class="button button-quiet" href="assets/documents/jung-hyun-bae-cv.pdf">View CV <span aria-hidden="true">↗</span></a>
+    <section class="profile" id="about" aria-labelledby="profile-title">
+      <div class="shell profile-grid">
+        <figure class="portrait-card reveal">
+          <img src="assets/images/profile-placeholder.svg" alt="Placeholder for Jung Hyun Bae's professional portrait">
+          <figcaption>Replace with a professional portrait</figcaption>
+        </figure>
+        <div class="profile-copy reveal">
+          <p class="kicker">Robotics · Biomedical sensing · Soft systems</p>
+          <h1 id="profile-title">Jung Hyun Bae</h1>
+          <p class="role">PhD Student in Robotics<br><span>Georgia Institute of Technology</span></p>
+          <p class="bio">I develop human-centered robotic and sensing systems that connect mechanics, health, and intelligent technology. My work includes physical benchmarks for pain-assessment devices, smartphone microscopy, fetal activity monitoring, wearable robots, and anatomically inspired robotic hands.</p>
+          <p class="bio">I am interested in translating careful mechanical design and experimental validation into accessible tools for research and care.</p>
+          <div class="profile-actions">
+            <a class="button" href="#research">View research</a>
+            <a class="button button-outline" href="assets/documents/jung-hyun-bae-cv.pdf">Download CV</a>
+          </div>
+          <div class="social-row" aria-label="Professional links">
+            <a href="mailto:jbae329@gatech.edu" aria-label="Email"><span aria-hidden="true">@</span><small>Email</small></a>
+            <a class="placeholder-link" href="#contact" aria-label="LinkedIn link placeholder"><span aria-hidden="true">in</span><small>LinkedIn</small></a>
+            <a class="placeholder-link" href="#contact" aria-label="GitHub link placeholder"><span aria-hidden="true">GH</span><small>GitHub</small></a>
+            <a class="placeholder-link" href="#contact" aria-label="Google Scholar link placeholder"><span aria-hidden="true">G</span><small>Scholar</small></a>
           </div>
         </div>
-        <aside class="hero-note reveal" aria-label="Current position">
-          <span class="status-dot" aria-hidden="true"></span>
-          <div><strong>PhD in Robotics</strong><br>Georgia Institute of Technology<br>Atlanta, Georgia</div>
-        </aside>
       </div>
     </section>
 
-    <section class="intro section shell" aria-labelledby="intro-title">
-      <div class="section-index">01 / Profile</div>
-      <div class="intro-copy reveal">
-        <h2 id="intro-title">Research at the intersection of <span>mechanics, sensing, and care.</span></h2>
-        <p>My work moves between prototyping and validation: from anatomically inspired robotic hands and wearable actuators to smartphone microscopy and physical benchmarks for pain-assessment devices. Across these projects, I ask how carefully designed hardware and computational tools can make health technology more measurable, accessible, and responsive.</p>
-        <div class="focus-list" aria-label="Research focus areas">
-          <span>Human-centered robotics</span><span>Biomedical sensing</span><span>Soft systems</span><span>Mechatronics & control</span>
-        </div>
+    <section class="quick-facts">
+      <div class="shell fact-grid">
+        <div><strong>Georgia Tech</strong><span>PhD in Robotics</span></div>
+        <div><strong>Human-centered</strong><span>Robotics & health</span></div>
+        <div><strong>Hardware to insight</strong><span>Design, sensing & control</span></div>
+        <div><strong>Atlanta, GA</strong><span>Currently based</span></div>
       </div>
     </section>
 
-    <section class="projects section" id="research" aria-labelledby="research-title">
+    <section class="section shell" id="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="section-label">Selected work</p><h2 id="research-title">Research</h2></div><p>Projects across biomedical instrumentation, mobile health, soft sensing, and robotic actuation.</p></div>
+      <div class="research-list">
+        <article class="research-item reveal">
+          <div class="project-image project-qst"><span>Project image<br>QST phantom</span></div>
+          <div class="research-copy"><p class="meta">2025–2026 · Emory University</p><h3>BQST — Physical accuracy benchmarks for QST devices</h3><p>Designed and fabricated a human-like gelatin skin phantom and characterized thermal and mechanical stimuli to support standardized calibration for pain research.</p><div class="tags"><span>Medical devices</span><span>Fabrication</span><span>Validation</span></div></div>
+        </article>
+        <article class="research-item reveal">
+          <div class="project-image project-mobile"><span>Project image<br>App or microscope</span></div>
+          <div class="research-copy"><p class="meta">2024–2025 · Georgia Tech</p><h3>μMobileScan — Smartphone whole-slide imaging</h3><p>Co-developed a smartphone application with real-time capture guidance to automate red blood cell counting for low-cost, point-of-care hematology.</p><div class="tags"><span>Mobile imaging</span><span>Computer vision</span><span>Health</span></div></div>
+        </article>
+        <article class="research-item reveal">
+          <div class="project-image project-sensor"><span>Project image<br>Soft sensor</span></div>
+          <div class="research-copy"><p class="meta">2024–2025 · Georgia Tech</p><h3>Inductus — Soft sensing for fetal health</h3><p>Developed a high-resolution soft-sensor system for continuous monitoring of fetal mechanical activity and validated movement detection using a fetal phantom.</p><div class="tags"><span>Soft sensors</span><span>Prototyping</span><span>Health monitoring</span></div></div>
+        </article>
+        <article class="research-item reveal">
+          <div class="project-image project-hand"><span>Project image<br>ACT-Hand</span></div>
+          <div class="research-copy"><p class="meta">2022–2024 · UT Austin</p><h3>ACT-Hand — Adjustable fingertip stiffness</h3><p>Integrated series elastic actuators into an anatomically correct hand testbed to enable active stiffness adjustment and precise fingertip stiffness control.</p><div class="tags"><span>Robotics</span><span>Control</span><span>Mechatronics</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft-bg" id="publications" aria-labelledby="publications-title">
       <div class="shell">
-        <div class="section-heading">
-          <div><div class="section-index">02 / Selected work</div><h2 id="research-title">Research projects</h2></div>
-          <p>Selected systems spanning medical-device metrology, mobile microscopy, fetal monitoring, and robotic actuation.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project project-featured reveal">
-            <div class="project-visual visual-bqst"><span class="visual-mark">01</span><div class="thermal-map" aria-hidden="true"></div><p>Replace with<br>phantom + QST photo</p></div>
-            <div class="project-body"><div class="project-meta"><span>2025—2026</span><span>Emory University</span></div><h3>BQST</h3><p class="project-subtitle">Benchmarking physical accuracy of sensory testing devices</p><p>Designed and fabricated a human-like gelatin skin phantom, then characterized thermal and mechanical stimuli to support standardized calibration in pain research.</p><div class="tags"><span>Medical devices</span><span>Experimental design</span><span>Fabrication</span></div></div>
-          </article>
-          <article class="project reveal">
-            <div class="project-visual visual-mobile"><span class="visual-mark">02</span><div class="phone-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div><p>Replace with<br>app screenshot</p></div>
-            <div class="project-body"><div class="project-meta"><span>2024—2025</span><span>Georgia Tech</span></div><h3>μMobileScan</h3><p class="project-subtitle">Smartphone whole-slide imaging</p><p>Co-developed real-time capture guidance for automated red blood cell counting and low-cost point-of-care hematology.</p><div class="tags"><span>Mobile imaging</span><span>Computer vision</span></div></div>
-          </article>
-          <article class="project reveal">
-            <div class="project-visual visual-inductus"><span class="visual-mark">03</span><div class="signal" aria-hidden="true"></div><p>Replace with<br>sensor prototype</p></div>
-            <div class="project-body"><div class="project-meta"><span>2024—2025</span><span>Georgia Tech</span></div><h3>Inductus</h3><p class="project-subtitle">Soft sensing for fetal health</p><p>Developed and validated a high-resolution soft-sensor system for continuous monitoring of fetal mechanical activity beyond heart rate.</p><div class="tags"><span>Soft sensors</span><span>Health monitoring</span></div></div>
-          </article>
-          <article class="project reveal">
-            <div class="project-visual visual-hand"><span class="visual-mark">04</span><div class="hand-lines" aria-hidden="true">⌁</div><p>Replace with<br>ACT-Hand photo</p></div>
-            <div class="project-body"><div class="project-meta"><span>2022—2024</span><span>UT Austin</span></div><h3>ACT-Hand</h3><p class="project-subtitle">Anatomically correct robotic hand</p><p>Integrated series elastic actuators to enable active stiffness adjustment and precise fingertip stiffness control under nonlinear constraints.</p><div class="tags"><span>Robotics</span><span>Controls</span><span>SEA</span></div></div>
-          </article>
+        <div class="section-heading"><div><p class="section-label">Research output</p><h2 id="publications-title">Selected publications</h2></div><a class="text-link" href="assets/documents/jung-hyun-bae-cv.pdf">Complete list in CV →</a></div>
+        <div class="publication-list">
+          <article class="publication reveal"><div class="year">2026</div><div><p class="venue">The Journal of Pain · USASP</p><h3>Establishing Physical Accuracy Benchmarks for QST Devices Using a Human-Like Skin Phantom</h3><p><strong>Jung Hyun Bae</strong>, Timothy Jun, Sixuan Wu, Daniel Harper, Alexander Adams</p></div><span class="type">Journal</span></article>
+          <article class="publication reveal"><div class="year">2026</div><div><p class="venue">ACM IMWUT</p><h3>μMobileScan: A Smartphone Whole Slide Imaging App for Red Blood Cell Counting with Real-time Guidance</h3><p>Sixuan Wu, <strong>Jung Hyun Bae</strong>, Alexander T. Adams</p></div><span class="type">Journal</span></article>
+          <article class="publication reveal"><div class="year">2026</div><div><p class="venue">ACM TEI ’26</p><h3>LumiBite: An In-the-Wild Technology Probe Exploring a Personalized Bottom-up Lighting Lunchbox</h3><p>Haiqing Xu, Xiwen Yao, Sixuan Wu, <strong>Jung Hyun Bae</strong>, et al.</p></div><span class="type">Conference</span></article>
+          <article class="publication reveal"><div class="year">2024</div><div><p class="venue">Frontiers in Robotics and AI</p><h3><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11521781/" target="_blank" rel="noopener noreferrer">Novel Bio-inspired Soft Actuators for Upper-limb Exoskeletons <span aria-hidden="true">↗</span></a></h3><p>Haiyun Zhang, Gabrielle Naquila, <strong>Jung Hyun Bae</strong>, et al.</p></div><span class="type">Journal</span></article>
         </div>
       </div>
     </section>
 
-    <section class="publications section shell" id="publications" aria-labelledby="publications-title">
-      <div class="section-heading">
-        <div><div class="section-index">03 / Scholarship</div><h2 id="publications-title">Publications</h2></div>
-        <div class="filter-group" aria-label="Filter publications"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="paper">Papers</button><button class="filter" data-filter="thesis">Theses</button></div>
-      </div>
-      <div class="publication-list">
-        <article class="publication reveal" data-type="paper"><div class="pub-year">2026</div><div><p class="pub-venue">The Journal of Pain · USASP</p><h3>Establishing Physical Accuracy Benchmarks for QST Devices Using a Human-Like Skin Phantom</h3><p><strong>Jung Hyun Bae</strong>, Timothy Jun, Sixuan Wu, Daniel Harper, Alexander Adams</p></div><span class="pub-type">Journal</span></article>
-        <article class="publication reveal" data-type="paper"><div class="pub-year">2026</div><div><p class="pub-venue">ACM IMWUT</p><h3>μMobileScan: A Smartphone Whole Slide Imaging App for Red Blood Cell Counting with Real-time Guidance</h3><p>Sixuan Wu, <strong>Jung Hyun Bae</strong>, Alexander T. Adams</p></div><span class="pub-type">Journal</span></article>
-        <article class="publication reveal" data-type="paper"><div class="pub-year">2026</div><div><p class="pub-venue">ACM TEI ’26</p><h3>LumiBite: An In-the-Wild Technology Probe Exploring Personalized Bottom-up Lighting Lunchbox</h3><p>Haiqing Xu, Xiwen Yao, Sixuan Wu, <strong>Jung Hyun Bae</strong>, et al.</p></div><span class="pub-type">Conference</span></article>
-        <article class="publication reveal" data-type="paper"><div class="pub-year">2024</div><div><p class="pub-venue">Frontiers in Robotics and AI</p><h3>Novel Bio-inspired Soft Actuators for Upper-limb Exoskeletons: Design, Fabrication and Feasibility Study</h3><p>Haiyun Zhang, Gabrielle Naquila, <strong>Jung Hyun Bae</strong>, et al.</p></div><span class="pub-type">Journal</span></article>
-        <article class="publication reveal" data-type="thesis"><div class="pub-year">2024</div><div><p class="pub-venue">MS Thesis · UT Austin</p><h3>Development of the ACT Hand with a Broad and Precisely Adjustable Stiffness Spectrum via Series Elastic Actuators</h3><p><strong>Jung Hyun Bae</strong></p></div><span class="pub-type">Thesis</span></article>
-        <article class="publication reveal" data-type="thesis"><div class="pub-year">2021</div><div><p class="pub-venue">BS Thesis · Chung-Ang University</p><h3>Designing Wire-driven Running Reinforcement Shoes</h3><p><strong>Jung Hyun Bae</strong></p></div><span class="pub-type">Thesis</span></article>
-      </div>
-    </section>
-
-    <section class="timeline-section section" id="timeline" aria-labelledby="timeline-title">
-      <div class="shell timeline-layout">
-        <div class="timeline-intro"><div class="section-index">04 / Background</div><h2 id="timeline-title">A path through robotics, health, and design.</h2><p>My training has crossed three institutions and a range of research cultures—from mechanical design to human-centered health technology.</p></div>
-        <div class="timeline">
-          <article class="timeline-item reveal"><div class="time">2024—Present</div><div><h3>PhD, Robotics</h3><p>Georgia Institute of Technology</p><small>Research across human-centered sensing, mobile microscopy, soft systems, and medical-device evaluation.</small></div></article>
-          <article class="timeline-item reveal"><div class="time">2022—2024</div><div><h3>MS, Mechanical Engineering</h3><p>The University of Texas at Austin</p><small>Dynamic Systems & Controls · ACT-Hand, soft electromagnetic actuation, pneumatic wearable robots, and teleoperation.</small></div></article>
-          <article class="timeline-item reveal"><div class="time">2015—2022</div><div><h3>BS, Mechanical Engineering</h3><p>Chung-Ang University</p><small>Wearable robotics, biomechanical analysis, mechanical design, and motor control.</small></div></article>
+    <section class="section shell" id="activity" aria-labelledby="activity-title">
+      <div class="two-column">
+        <div class="sticky-intro"><p class="section-label">What’s new</p><h2 id="activity-title">Recent activity</h2><p>A concise timeline for papers, projects, teaching, talks, awards, or other personal updates. Add new items at the top.</p></div>
+        <div class="activity-list">
+          <article class="activity reveal"><time>2026</time><div><span class="activity-kind">Publication</span><h3>BQST study in <em>The Journal of Pain</em></h3><p>Work on physical accuracy benchmarks for quantitative sensory testing devices.</p></div></article>
+          <article class="activity reveal"><time>2026</time><div><span class="activity-kind">Publication</span><h3>μMobileScan published in ACM IMWUT</h3><p>Smartphone whole-slide imaging with real-time guidance for red blood cell counting.</p></div></article>
+          <article class="activity reveal"><time>2025–26</time><div><span class="activity-kind">Teaching</span><h3>Health Sensing & Interventions</h3><p>Supported student projects, research proposals, feedback, and IRB certification at Georgia Tech.</p></div></article>
+          <article class="activity reveal"><time>2024</time><div><span class="activity-kind">Milestone</span><h3>Started the Robotics PhD at Georgia Tech</h3><p>Joined Georgia Tech’s interdisciplinary robotics community after completing an MS at UT Austin.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="teaching section shell" aria-labelledby="teaching-title">
-      <div class="section-index">05 / Teaching & tools</div>
-      <div class="teaching-grid">
-        <div><h2 id="teaching-title">Teaching technical rigor through practice.</h2><p>I have supported courses in health sensing, graduate research practice, and dynamic systems and controls—guiding experiments, proposals, student projects, and responsible research preparation.</p></div>
-        <div class="toolbox"><h3>Selected toolkit</h3><dl><div><dt>Build</dt><dd>SolidWorks · Inventor · KiCad</dd></div><div><dt>Control</dt><dd>Python · C++ · ROS 2 · MATLAB · LabVIEW</dd></div><div><dt>Analyze</dt><dd>Ansys · Abaqus · Minitab · Visual3D</dd></div><div><dt>Simulate</dt><dd>Gazebo · Blender</dd></div></dl></div>
+    <section class="section blue-section" id="skills" aria-labelledby="skills-title">
+      <div class="shell"><div class="section-heading light"><div><p class="section-label">Methods & tools</p><h2 id="skills-title">Skills</h2></div><p>A practical toolkit spanning physical prototyping, system control, analysis, and visualization.</p></div>
+        <div class="skills-grid">
+          <article><span>01</span><h3>Mechanical design</h3><p>SolidWorks, Autodesk Inventor, fabrication, mechanism design, prototyping</p></article>
+          <article><span>02</span><h3>Control & software</h3><p>Python, C++, ROS 2, MATLAB, LabVIEW, Arduino</p></article>
+          <article><span>03</span><h3>Analysis</h3><p>Ansys, Abaqus, Minitab, biomechanical analysis with Visual3D</p></article>
+          <article><span>04</span><h3>Simulation & media</h3><p>Gazebo, MoveIt, Blender, Premiere Pro, Photoshop</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="contact" id="contact" aria-labelledby="contact-title">
-      <div class="shell contact-inner reveal">
-        <p class="eyebrow">Let’s connect</p><h2 id="contact-title">Interested in human-centered robotics or health technology?</h2><p>I’m always glad to discuss research, collaboration, and ideas at the boundary of mechanics and medicine.</p>
-        <a class="contact-link" href="mailto:jbae329@gatech.edu">jbae329@gatech.edu <span aria-hidden="true">↗</span></a>
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-grid">
+        <div><p class="section-label">Contact</p><h2 id="contact-title">Let’s connect.</h2><p>For research conversations, collaboration, or professional opportunities, reach out by email or connect through one of the profiles below.</p></div>
+        <div class="contact-links">
+          <a href="mailto:jbae329@gatech.edu"><span>Email</span><strong>jbae329@gatech.edu</strong><b>↗</b></a>
+          <a class="placeholder-link" href="#contact"><span>LinkedIn</span><strong>Add profile URL</strong><b>↗</b></a>
+          <a class="placeholder-link" href="#contact"><span>GitHub</span><strong>Add profile URL</strong><b>↗</b></a>
+          <a class="placeholder-link" href="#contact"><span>Google Scholar</span><strong>Add profile URL</strong><b>↗</b></a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer><div class="shell footer-inner"><p>© <span id="year">2026</span> Jung Hyun Bae</p><p>Designed for curiosity, built for the open web.</p><a href="#top">Back to top ↑</a></div></footer>
+  <footer><div class="shell footer-inner"><p>© <span id="year">2026</span> Jung Hyun Bae</p><p>Robotics PhD student at Georgia Tech</p><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>

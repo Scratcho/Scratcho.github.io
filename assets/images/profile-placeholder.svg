@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 890" role="img" aria-labelledby="title desc">
+  <title id="title">Professional portrait placeholder</title>
+  <desc id="desc">A neutral silhouette showing where to add the client's professional portrait.</desc>
+  <rect width="800" height="890" fill="#dfe6ec"/>
+  <circle cx="400" cy="285" r="150" fill="#91a5b7"/>
+  <path d="M125 890c15-225 117-355 275-355s260 130 275 355" fill="#91a5b7"/>
+  <circle cx="400" cy="445" r="310" fill="none" stroke="#b8c6d2" stroke-width="2"/>
+  <path d="M90 100h90M90 100v90M710 790h-90M710 790v-90" fill="none" stroke="#173c70" stroke-width="4"/>
+  <rect x="208" y="760" width="384" height="58" rx="2" fill="#173c70"/>
+  <text x="400" y="797" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="22" letter-spacing="3">ADD PORTRAIT</text>
+</svg>

@@ -14,10 +14,12 @@ Then visit `http://localhost:8000`.
 
 ## Personalize it
 
-1. Replace the four labeled project placeholders in `index.html` with `<img>` elements pointing to your images in `assets/images/`.
-2. Add paper, code, project-page, Google Scholar, GitHub, and LinkedIn links once you have the exact URLs.
-3. Review the short research summary and project descriptions for preferred terminology.
-4. Replace `assets/documents/jung-hyun-bae-cv.pdf` whenever the CV changes, keeping the same filename so the website link stays current.
+1. Replace `assets/images/profile-placeholder.svg` with the client's professional portrait and update the `src` in `index.html` if the filename changes.
+2. Replace the four labeled project placeholders in `index.html` with `<img>` elements pointing to project images in `assets/images/`.
+3. Replace every `placeholder-link` social link with the client's exact LinkedIn, GitHub, and Google Scholar URLs, then remove the `placeholder-link` class.
+4. Add paper, code, and project-page links once you have the canonical URLs.
+5. Review the short research summary and project descriptions for preferred terminology.
+6. Replace `assets/documents/jung-hyun-bae-cv.pdf` whenever the CV changes, keeping the same filename so the website link stays current.
 
 Suggested project image markup:
 
@@ -61,9 +63,11 @@ git push
 ## Files
 
 - `index.html` — all website content and semantic structure
+- `life.html` — separate personal photo-journal page for lab life, travel, celebrations, and everyday updates
 - `styles.css` — layout, responsive design, dark mode, and print styling
 - `script.js` — navigation, theme, animation, and publication filtering
-- `assets/images/research-hero.png` — generated placeholder hero artwork
+- `assets/images/profile-placeholder.svg` — temporary professional portrait placeholder
+- `assets/images/research-hero.png` — optional generated research artwork retained for future use
 - `assets/documents/jung-hyun-bae-cv.pdf` — web-friendly CV copy
 
 ## Notes
