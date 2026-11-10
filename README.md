@@ -1,58 +1,82 @@
-# Jung Hyun Bae — Academic Website
+# Junghyun Bae: academic website
 
-A no-build, GitHub Pages-ready academic portfolio. The content was drafted from the included CV and organized around research projects, publications, education, teaching, and technical skills.
+A no-build site for GitHub Pages (`https://scratcho.github.io/`). Plain HTML, CSS, and JavaScript: edit a file, commit, push, and the site updates.
 
 ## Preview locally
 
-Open `index.html` directly, or start a small local server:
+Open `index.html` directly in a browser, or start a small local server:
 
 ```bash
-python3 -m http.server 8000
+python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
 
-## Personalize it
+## Files
 
-1. Replace `assets/images/profile-placeholder.svg` with the client's professional portrait and update the `src` in `index.html` if the filename changes.
-2. Replace the four labeled project placeholders in `index.html` with `<img>` elements pointing to project images in `assets/images/`.
-3. Replace every `placeholder-link` social link with the client's exact LinkedIn, GitHub, and Google Scholar URLs, then remove the `placeholder-link` class.
-4. Add paper, code, and project-page links once you have the canonical URLs.
-5. Review the short research summary and project descriptions for preferred terminology.
-6. Replace `assets/documents/jung-hyun-bae-cv.pdf` whenever the CV changes, keeping the same filename so the website link stays current.
+- `index.html`: the academic page (hero, about, projects, publications, experience, news, contact)
+- `life.html`: the personal page (photos and interests)
+- `styles.css`: layout, light and dark themes, responsive rules, print styling
+- `script.js`: menu, theme switch, scroll effects, project filter, project details dialog
+- `assets/images/`: portrait, project figures, personal photos, favicon
+- `assets/documents/junghyun-bae-cv.pdf`: the CV the site links to
+- `assets/documents/*.pdf`: course project documents recovered from the old site
 
-Suggested project image markup:
+## Common updates
+
+### Replace the CV
+
+Save the new CV as `assets/documents/junghyun-bae-cv.pdf` (same file name), so every CV link keeps working.
+
+### Add a news item
+
+In `index.html`, find `<ol class="news-list">` and add a block at the top:
 
 ```html
-<div class="project-visual">
-  <img src="assets/images/my-project.jpg" alt="Brief description of the project prototype">
-</div>
+<li class="news reveal"><time>Jan 2027</time>
+  <div><span class="kind">Paper</span>
+    <h3>Title of the update</h3>
+    <p>One sentence of detail.</p>
+  </div>
+</li>
 ```
 
-Add this rule to `styles.css` if using photos:
+Also update the "Now" card near the top (`<aside class="now-card">`) and its "Updated" line.
 
-```css
-.project-visual img { width: 100%; height: 100%; object-fit: cover; }
+### Add a publication
+
+In `index.html`, find `<ol class="pub-list">` and add a block (newest first):
+
+```html
+<li class="pub reveal">
+  <span class="pub-year">2027</span>
+  <div>
+    <p class="pub-venue">Venue name</p>
+    <h3><a href="https://doi.org/..." rel="noopener">Paper title</a></h3>
+    <p class="pub-authors">First Author, <strong>Junghyun Bae</strong>, Last Author</p>
+  </div>
+  <span class="pub-type">Journal</span>
+</li>
 ```
 
-## Publish at `username.github.io`
+Then update the publication count in the hero (`data-count` and the number inside the same `<span>`).
 
-1. Create a public GitHub repository named exactly `YOUR-USERNAME.github.io`.
-2. In this folder, initialize Git and publish the files:
+### Add a project
 
-```bash
-git init
-git add .
-git commit -m "Launch academic website"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-USERNAME.github.io.git
-git push -u origin main
-```
+Copy one `<article class="project reveal" ...>` block inside `<div class="project-grid">`.
 
-3. In the repository on GitHub, open **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. After GitHub finishes deploying, the site will be available at `https://YOUR-USERNAME.github.io`.
+- `data-cat` sets which filter buttons show the card. Use one or more of `wearable`, `actuation`, `medical`, `sensing`, `coursework`, separated by spaces.
+- The text inside `<div class="project-detail" hidden>` appears in the pop-up when the card is selected. Images inside `<div class="gallery">` become a scrollable strip.
+- Put the image in `assets/images/` at about 1200 px wide. Use `class="project-media contain"` for drawings on a white background and plain `class="project-media"` for photos.
+- Adding `wide` to the article class makes the card span two columns. Keep the number of grid cells a multiple of three so the last row stays full.
 
-Later updates are simply:
+### Add a photo to the Life page
+
+Copy one `<article class="story reveal">` block in `life.html` and point it at a new image in `assets/images/`.
+
+## Publishing
+
+The repository deploys from the `main` branch (Settings, Pages, Deploy from a branch, `main`, `/ (root)`).
 
 ```bash
 git add .
@@ -60,18 +84,8 @@ git commit -m "Update publications"
 git push
 ```
 
-## Files
-
-- `index.html` — all website content and semantic structure
-- `life.html` — separate personal photo-journal page for lab life, travel, celebrations, and everyday updates
-- `styles.css` — layout, responsive design, dark mode, and print styling
-- `script.js` — navigation, theme, animation, and publication filtering
-- `assets/images/profile-placeholder.svg` — temporary professional portrait placeholder
-- `assets/images/research-hero.png` — optional generated research artwork retained for future use
-- `assets/documents/jung-hyun-bae-cv.pdf` — web-friendly CV copy
-
 ## Notes
 
-- The site intentionally omits the phone number from the public page.
-- Publication URLs were not guessed. Add the canonical DOI/publisher links when confirmed.
-- The Google Fonts dependency can be removed if you prefer a fully offline site; the CSS includes local fallbacks.
+- Fonts load from Google Fonts. The CSS has local fallbacks if they are unavailable.
+- The theme follows the visitor's system setting, and the button in the header overrides it on that device.
+- The CV PDF is public. Check it for anything you do not want on the open web (for example a phone number) before replacing it.
