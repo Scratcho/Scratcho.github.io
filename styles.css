@@ -225,6 +225,8 @@ button { font: inherit; color: inherit; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .tags span { padding: 3px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: .72rem; color: var(--muted); background: var(--surface); }
 
+.featured-note { margin: -22px 0 36px; color: var(--muted); font-size: .86rem; }
+
 /* Filter + grid */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 26px; }
 .chip { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: .84rem; cursor: pointer; transition: all .2s; }
