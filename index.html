@@ -21,7 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=22">
   <script>
     // Apply the saved theme before first paint.
     try {
@@ -29,7 +29,7 @@
       if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
     } catch (e) { }
   </script>
-  <script src="script.js?v=21" defer></script>
+  <script src="script.js?v=22" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -44,7 +44,7 @@
     ],
     "url": "https://scratcho.github.io/",
     "email": "mailto:jbae329@gatech.edu",
-    "sameAs": ["https://www.linkedin.com/in/junghyun-bae-533494382/", "https://github.com/scratcho"],
+    "sameAs": ["https://www.linkedin.com/in/jbae329/", "https://github.com/scratcho"],
     "knowsAbout": ["Wearable robotics", "Soft actuators", "Medical devices", "Mechatronics", "Quantitative sensory testing"]
   }
   </script>
@@ -94,7 +94,7 @@
           </div>
           <ul class="social-row" aria-label="Professional links">
             <li><a href="mailto:jbae329@gatech.edu"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></svg>Email</a></li>
-            <li><a href="https://www.linkedin.com/in/junghyun-bae-533494382/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.4v.2M11.5 16.5v-6M11.5 13.2c0-1.7 1-2.7 2.5-2.7s2.5 1 2.5 2.7v3.3"/></svg>LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/jbae329/" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.5 10.5v6M7.5 7.4v.2M11.5 16.5v-6M11.5 13.2c0-1.7 1-2.7 2.5-2.7s2.5 1 2.5 2.7v3.3"/></svg>LinkedIn</a></li>
             <li><a href="https://github.com/scratcho" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.2-4-2-5.5-2.5M14.5 21v-3.2c0-.9.1-1.3-.5-1.9 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.300 3.200 5.300 3.500 5.300 3.500a4.200 4.200 0 0 0-.1 3.200A4.600 4.600 0 0 0 4 9.900c0 4.600 2.700 5.700 5.500 6-.6.600-.6 1.200-.5 1.900V21"/></svg>GitHub</a></li>
           </ul>
         </div>
@@ -243,9 +243,9 @@
 
         <div class="project-grid" id="project-grid">
 
-          <article class="project wide reveal" data-cat="medical sensing">
+          <article class="project full reveal" data-cat="medical sensing">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media"><img loading="lazy" src="assets/images/bqst-phantom.jpg" alt="Gelatin skin mounted on the instrumented forearm phantom"></div>
+              <div class="project-media contain"><img loading="lazy" src="assets/images/bqst-schematic.svg" alt="Schematic of the instrumented skin phantom, its sensors, and the readout chain"></div>
               <div class="project-body">
                 <p class="meta">2025 to 2026 · Emory University and Georgia Tech</p>
                 <h3>BQST: accuracy benchmarks for QST devices</h3>
@@ -256,9 +256,11 @@
             </button>
             <div class="project-detail" hidden>
               <div class="gallery">
-                <img loading="lazy" src="assets/images/QST_device.png" alt="CAD of the instrumented forearm phantom">
-                <img loading="lazy" src="assets/images/bqst-phantom.jpg" alt="Gelatin skin mounted on the phantom on the bench">
-                <img loading="lazy" src="assets/images/bqst-poster.jpg" alt="Junghyun Bae presenting the BQST poster at the USASP meeting">
+                <figure class="lg"><img loading="lazy" src="assets/images/bqst-schematic.svg" alt="Schematic of the instrumented skin phantom, its sensors, and the readout chain"><figcaption>The instrumented phantom: a force sensor pad and four Pt1000 temperature sensors under an artificial skin layer, warmed by circulating water.</figcaption></figure>
+                <figure class="lg"><img loading="lazy" src="assets/images/bqst-force-accuracy.png" alt="Delivered force plotted against nominal force for three mechanical QST instruments"><figcaption>Delivered versus nominal force for three mechanical instruments, eight operators each. The dashed line marks perfect agreement.</figcaption></figure>
+                <figure class="lg"><img loading="lazy" src="assets/images/bqst-thermal-response.png" alt="Mean skin-phantom surface temperature over time for the warm-contact stimuli"><figcaption>Mean surface temperature after contact for the warm-contact stimuli. Dotted lines mark the nominal targets.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/bqst-phantom.jpg" alt="Gelatin skin mounted on the phantom on the bench"><figcaption>Gelatin skin layer on the phantom.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/bqst-poster.jpg" alt="Junghyun Bae presenting the BQST poster at the USASP meeting"><figcaption>Poster at the USASP annual meeting.</figcaption></figure>
               </div>
               <p>Quantitative sensory testing (QST) is how pain researchers measure sensitivity to touch, pressure,
                 and temperature, but nominal device specifications may not fully characterize the stimulus a device delivers in use.
@@ -273,7 +275,7 @@
                   explained 13 to 69% of the error variance for the mechanical methods.</li>
               </ul>
               <p>The abstract appeared in <em>The Journal of Pain</em> (USASP), and the first-author full manuscript
-                is under review at the same journal. The findings started BQST 2.</p>
+                is under review at the same journal. The result plots above are from that manuscript. The findings started BQST 2.</p>
               <p class="detail-links"><a href="https://doi.org/10.1016/j.jpain.2025.105806" rel="noopener">Abstract in The Journal of Pain</a></p>
             </div>
           </article>
@@ -290,7 +292,11 @@
               </div>
             </button>
             <div class="project-detail" hidden>
-              <div class="gallery"><img loading="lazy" src="assets/images/umobile.png" alt="Workflow from sample collection to cell counting"></div>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/umobile.png" alt="Workflow from sample collection to cell counting"><figcaption>From a finger-prick sample to an automated count.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/umobile-count.jpg" alt="Microscope image with detected red blood cells marked"><figcaption>Detected red blood cells.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/umobile-scan.jpg" alt="Stitched whole-slide scan of the counting chamber"><figcaption>Stitched whole-slide scan.</figcaption></figure>
+              </div>
               <p>μMobileScan is a smartphone app for whole-slide imaging. It guides the user in real time during capture and automates red blood cell counting, with the goal of low-cost, point-of-care hematology.</p>
               <p>I co-developed the application. Published in the <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies</em> (IMWUT), March 2026.</p>
               <p class="detail-links"><a href="https://dl.acm.org/doi/10.1145/3790109" rel="noopener">Paper (ACM Digital Library)</a></p>
@@ -322,7 +328,7 @@
 
           <article class="project reveal" data-cat="sensing">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media contain"><img loading="lazy" src="assets/images/lumibite-cad.jpg" alt="CAD of the LumiBite lunchbox base with electronics"></div>
+              <div class="project-media contain"><img loading="lazy" src="assets/images/lumibite-exploded.png" alt="Exploded view of the LumiBite lunchbox and its electronics"></div>
               <div class="project-body">
                 <p class="meta">2024 to 2025 · Uncommon Sense Labs, Georgia Tech</p>
                 <h3>LumiBite: a bottom-up lighting lunchbox</h3>
@@ -332,7 +338,11 @@
               </div>
             </button>
             <div class="project-detail" hidden>
-              <div class="gallery"><img loading="lazy" src="assets/images/lumibite-cad.jpg" alt="CAD of the lunchbox base with the electronics bay"></div>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/lumibite-exploded.png" alt="Exploded view of the LumiBite lunchbox: diffusion layer, LED roll, controller, load cell, power supply"><figcaption>Exploded view of the device.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/lumibite-app.jpg" alt="The LumiBite companion app and the lunchbox lighting in use"><figcaption>Companion app and lighting in use.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/lumibite-cad.jpg" alt="CAD of the lunchbox base with the electronics bay"><figcaption>Base with the electronics bay.</figcaption></figure>
+              </div>
               <p>LumiBite is a lunchbox that lights food from below with lighting personalized to the user. It was studied in the wild as a technology probe for enhancing the dining experience.</p>
               <p>I designed the device hardware and wrote embedded firmware for it (ESP32, Bluetooth Low Energy, and a
                 load cell front end). Published at the ACM International Conference on Tangible, Embedded, and
@@ -343,7 +353,7 @@
 
           <article class="project reveal" data-cat="actuation">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media contain"><img loading="lazy" src="assets/images/act-hand-cad.jpg" alt="CAD model of the ACT Hand finger mechanisms"></div>
+              <div class="project-media"><img loading="lazy" src="assets/images/act-hand-side.jpg" alt="Side view of the ACT Hand testbed with its actuator rack"></div>
               <div class="project-body">
                 <p class="meta">2022 to 2024 · ReNeu Robotics Lab, UT Austin</p>
                 <h3>ACT Hand: adjustable fingertip stiffness</h3>
@@ -353,7 +363,11 @@
               </div>
             </button>
             <div class="project-detail" hidden>
-              <div class="gallery"><img loading="lazy" src="assets/images/act-hand-cad.jpg" alt="CAD model of the ACT Hand finger mechanisms"></div>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/act-hand-side.jpg" alt="Side view of the ACT Hand testbed with its actuator rack"><figcaption>The ACT Hand testbed: the tendon-driven hand and its actuator rack.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/act-hand-fingertip.jpg" alt="Close view of the ACT Hand index fingertip at the stiffness measurement point"><figcaption>Fingertip at the stiffness measurement point.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/act-hand-tendons.jpg" alt="CAD of a finger with its tendon routing labeled"><figcaption>Tendon routing of a finger.</figcaption></figure>
+              </div>
               <p>The human hand is a remarkable biological system, and the limited understanding of its biomechanics
                 and neuromuscular control makes it hard to build robotic hands and prostheses that match it. The
                 Anatomically Correct Testbed (ACT) Hand reproduces the musculoskeletal structure of the human fingers
@@ -369,9 +383,9 @@
             </div>
           </article>
 
-          <article class="project wide reveal" data-cat="wearable actuation">
+          <article class="project reveal" data-cat="wearable actuation">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media"><img loading="lazy" src="assets/images/soft-actuator-scasper-render.jpg" alt="Render of SCASPER, a scallop-shaped pneumatic actuator"></div>
+              <div class="project-media"><img loading="lazy" src="assets/images/soft-actuator-lisper-render.jpg" alt="Render of LISPER, a lobster-inspired silicone pneumatic actuator"></div>
               <div class="project-body">
                 <p class="meta">2022 to 2023 · ReNeu Robotics Lab, UT Austin</p>
                 <h3>Bio-inspired soft actuators for exoskeletons</h3>
@@ -381,10 +395,11 @@
             </button>
             <div class="project-detail" hidden>
               <div class="gallery">
-                <img loading="lazy" src="assets/images/soft-actuator-lisper-render.jpg" alt="Render of LISPER, the lobster-inspired silicone actuator with its segmented shell">
-                <img loading="lazy" src="assets/images/soft-actuator-scasper-render.jpg" alt="Render of SCASPER, the scallop-shaped actuator">
-                <img loading="lazy" src="assets/images/soft-actuator-photo.jpg" alt="Photos of the two fabricated actuators">
-                <img loading="lazy" src="assets/images/soft-actuator-2dof.jpg" alt="Both actuators mounted on a two-degree-of-freedom robot arm">
+                <figure><img loading="lazy" src="assets/images/soft-actuator-lisper-render.jpg" alt="Render of LISPER, the lobster-inspired silicone actuator with its segmented shell"><figcaption>LISPER, for the elbow.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/soft-actuator-lisper-photo.jpg" alt="Photo of the fabricated LISPER actuator"><figcaption>Fabricated LISPER.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/soft-actuator-scasper-render.jpg" alt="Render of SCASPER, the scallop-shaped actuator"><figcaption>SCASPER, for the shoulder.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/soft-actuator-scasper-photo.jpg" alt="Photo of the fabricated SCASPER actuator"><figcaption>Fabricated SCASPER.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/soft-actuator-2dof.jpg" alt="Both actuators mounted on a two-degree-of-freedom robot arm"><figcaption>Both actuators on a two-degree-of-freedom arm.</figcaption></figure>
               </div>
               <p>This study developed and evaluated two novel pneumatic actuators using kinematic and dynamic simulations and experiments: the Lobster-Inspired Silicone Pneumatic Robot (LISPER) for the elbow and the Scallop-Shaped Pneumatic Robot (SCASPER) for the shoulder. LISPER incorporates detailed bellow-shaped folds, meshes, and braces, while SCASPER achieves adjustable linearity of output force and torque through modifications to the silicone rubber strip pattern.</p>
               <p>LISPER performs well in range of motion, output force and torque, bandwidth, and linearity. SCASPER
@@ -397,7 +412,7 @@
 
           <article class="project reveal" data-cat="actuation wearable">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media pattern p-coil"><span>SEMA</span></div>
+              <div class="project-media contain"><img loading="lazy" src="assets/images/sema-concept.jpg" alt="Concept of the soft electromagnetic actuator: flexible coils, elastomer magnet array, and ferrofluid bearing"></div>
               <div class="project-body">
                 <p class="meta">2023 · Precision Mechatronics and Control Lab, UT Austin</p>
                 <h3>Soft electromagnetic actuator for haptics</h3>
@@ -407,6 +422,10 @@
               </div>
             </button>
             <div class="project-detail" hidden>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/sema-concept.jpg" alt="Concept of the soft electromagnetic actuator: flexible coils, elastomer magnet array, and ferrofluid bearing"><figcaption>Actuator concept.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/sema-field-simulation.jpg" alt="Finite element simulation of the magnetic field in the actuator"><figcaption>Finite element simulation of the magnetic field.</figcaption></figure>
+              </div>
               <p>Project: <em>A Novel Soft Electromagnetic Actuator with Lorentz-type Design and Ferrofluidic Bearings
                   for High Strength, Efficiency, and Transparency</em>, with research support from Meta Platforms,
                 Inc.</p>
@@ -416,7 +435,7 @@
 
           <article class="project reveal" data-cat="actuation">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media pattern p-grid"><span>PLATO</span></div>
+              <div class="project-media contain"><img loading="lazy" src="assets/images/plato-hand-cad.jpg" alt="CAD model of the PLATO robot hand"></div>
               <div class="project-body">
                 <p class="meta">2023 · Human Centered Robotics Lab, UT Austin</p>
                 <h3>PLATO: robot hand manipulation and teleoperation</h3>
@@ -425,6 +444,9 @@
               </div>
             </button>
             <div class="project-detail" hidden>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/plato-hand-cad.jpg" alt="CAD model of the PLATO robot hand"></figure>
+              </div>
               <p>A robot hand manipulation and teleoperation project in the Human Centered Robotics Lab, with research
                 support from Sony Corporation. I planned and simulated motion tasks for the hand using MoveIt and the
                 Gazebo environment.</p>
@@ -443,7 +465,10 @@
               </div>
             </button>
             <div class="project-detail" hidden>
-              <div class="gallery"><img loading="lazy" src="assets/images/flex-dual-pulley.jpg" alt="CAD of the two-way dual pulley actuator"></div>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/flex-dual-pulley.jpg" alt="CAD of the two-way dual pulley actuator"><figcaption>Two-way dual pulley actuator.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/flex-suit-back.jpg" alt="Two actuators mounted on the back of the exosuit"><figcaption>Actuators on the back of the suit.</figcaption></figure>
+              </div>
               <p>FLEX is a smart wearable suit, combined with deep learning, for muscle power assistance, injury
                 prevention, and work efficiency for forest workers. I worked on it as a research assistant in the
                 Assistive and Rehabilitation Robotics Lab.</p>
@@ -470,9 +495,10 @@
             </button>
             <div class="project-detail" hidden>
               <div class="gallery">
-                <img loading="lazy" src="assets/images/compact-actuator-render.jpg" alt="Render of the actuator with the cover removed">
-                <img loading="lazy" src="assets/images/compact-actuator-section.jpg" alt="CAD view of the belt stage and motor">
-                <img loading="lazy" src="assets/images/compact-actuator-printed.jpg" alt="3D printed prototype of the actuator housing">
+                <figure><img loading="lazy" src="assets/images/compact-actuator-render.jpg" alt="Render of the actuator with the cover removed"><figcaption>Belt stage with the cover removed.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/compact-actuator-section.jpg" alt="CAD view of the belt stage and motor"></figure>
+                <figure><img loading="lazy" src="assets/images/compact-actuator-printed.jpg" alt="3D printed prototype of the actuator housing"><figcaption>3D printed prototype.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/compact-actuator-worn.jpg" alt="The actuator prototype worn on the hip"><figcaption>Worn on the hip.</figcaption></figure>
               </div>
               <p>Developed a compact and lightweight actuator by replacing the conventional planetary gears used in
                 wearable robots with a timing belt system. The encoder sits inside the tensioner pulley to enable
@@ -498,18 +524,20 @@
             </button>
             <div class="project-detail" hidden>
               <div class="gallery">
-                <img loading="lazy" src="assets/images/running-shoes-parts.jpg" alt="3D printed planetary gear parts">
-                <img loading="lazy" src="assets/images/running-shoes-test.jpg" alt="Outdoor running test with the device">
+                <figure><img loading="lazy" src="assets/images/running-shoes-parts.jpg" alt="3D printed planetary gear parts"><figcaption>3D printed parts.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/running-shoes-gears.jpg" alt="Assembled planetary gear stage"><figcaption>Planetary gear stage.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/running-shoes-exploded.jpg" alt="Exploded CAD view of the drive"><figcaption>Exploded view of the drive.</figcaption></figure>
+                <figure><img loading="lazy" src="assets/images/running-shoes-fea.jpg" alt="Finite element mesh of the planetary gears in Ansys"><figcaption>Gear analysis in Ansys.</figcaption></figure>
               </div>
               <p>Capstone design project and BS thesis. The device uses a planetary gear system and a wire-driven
                 mechanism to deliver energy from the arm movement of running to the soles and strengthen propulsion.
-                Designed in SolidWorks and analyzed in Ansys, then prototyped and tested outdoors.</p>
+                Designed in SolidWorks, analyzed in Ansys, and prototyped with 3D printed parts.</p>
             </div>
           </article>
 
           <article class="project reveal" data-cat="coursework">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media pattern p-scan"><span>Macro AFM</span></div>
+              <div class="project-media contain"><img loading="lazy" src="assets/images/afm-scan-result.png" alt="Scan of a nickel coin: surface height map and 3D plot"></div>
               <div class="project-body">
                 <p class="meta">2022 · Advanced Mechatronics II, UT Austin</p>
                 <h3>Error budgeting and imaging with a macro-scale AFM</h3>
@@ -519,6 +547,9 @@
               </div>
             </button>
             <div class="project-detail" hidden>
+              <div class="gallery">
+                <figure class="lg"><img loading="lazy" src="assets/images/afm-scan-result.png" alt="Scan of a nickel coin: surface height map and 3D plot"><figcaption>Scan of a nickel coin: height map (left) and 3D surface (right).</figcaption></figure>
+              </div>
               <p>Final project for ME 392 Advanced Mechatronics II, with Dong Ho Kang. Using a tapping-mode macro AFM
                 that tracks the sample vertically and a moving stage in the horizontal plane, we modeled the error of
                 the imaging stages (power spectral density and cumulative power spectrum) and scanned a 10 mm by 10 mm
@@ -529,7 +560,7 @@
 
           <article class="project reveal" data-cat="coursework">
             <button class="project-open" type="button" aria-haspopup="dialog">
-              <div class="project-media pattern p-links"><span>4-bar drone</span></div>
+              <div class="project-media"><img loading="lazy" src="assets/images/drone-propeller-wheel.jpg" alt="3D printed propeller with an outer ring that also works as a wheel"></div>
               <div class="project-body">
                 <p class="meta">2023 · Robot Mechanism Design, UT Austin</p>
                 <h3>All-terrain drone for autonomous exploration</h3>
@@ -539,11 +570,13 @@
               </div>
             </button>
             <div class="project-detail" hidden>
+              <div class="gallery">
+                <figure><img loading="lazy" src="assets/images/drone-propeller-wheel.jpg" alt="3D printed propeller with an outer ring that also works as a wheel"><figcaption>Printed propeller with an outer ring, so it can also roll as a wheel.</figcaption></figure>
+              </div>
               <p>Course project with Alexander Khair and Michael Kasman. Drones map areas well but spend far more
                 energy in flight than ground robots do, and weight is critical. The proposal uses a double four-bar
                 loop mechanism to transform the vehicle between air, ground, and water configurations, so the
                 propeller that lifts in the air also drives on water and works as a wheel on the ground.</p>
-              <p class="detail-links"><a href="assets/documents/all-terrain-drone-proposal.pdf">Project proposal (PDF)</a></p>
             </div>
           </article>
 
@@ -827,7 +860,7 @@
         <p>For research conversations, collaborations, or professional opportunities, I am glad to hear from anyone working on robotics, medical technology, or wearable systems.</p>
         <div class="contact-links">
           <a href="mailto:jbae329@gatech.edu"><span>Email</span><strong>jbae329@gatech.edu</strong></a>
-          <a href="https://www.linkedin.com/in/junghyun-bae-533494382/" rel="noopener"><span>LinkedIn</span><strong>in/junghyun-bae</strong></a>
+          <a href="https://www.linkedin.com/in/jbae329/" rel="noopener"><span>LinkedIn</span><strong>in/jbae329</strong></a>
           <a href="https://github.com/scratcho" rel="noopener"><span>GitHub</span><strong>github.com/scratcho</strong></a>
         </div>
       </div>

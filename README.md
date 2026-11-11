@@ -66,9 +66,9 @@ Then update the publication count in the hero (`data-count` and the number insid
 Copy one `<article class="project reveal" ...>` block inside `<div class="project-grid">`.
 
 - `data-cat` sets which filter buttons show the card. Use one or more of `wearable`, `actuation`, `medical`, `sensing`, `coursework`, separated by spaces.
-- The text inside `<div class="project-detail" hidden>` appears in the pop-up when the card is selected. Images inside `<div class="gallery">` become a scrollable strip.
+- The text inside `<div class="project-detail" hidden>` appears in the pop-up when the card is selected. Each `<figure>` inside `<div class="gallery">` becomes one image in a scrollable strip; an optional `<figcaption>` shows under it, and `class="lg"` makes it taller.
 - Put the image in `assets/images/` at about 1200 px wide. Use `class="project-media contain"` for drawings on a white background and plain `class="project-media"` for photos.
-- Adding `wide` to the article class makes the card span two columns. Keep the number of grid cells a multiple of three so the last row stays full.
+- Adding `full` to the article class makes the card span the whole row with the image on the left (used for the BQST card). Keep the number of grid cells a multiple of three so the last row stays full.
 
 ### Add a photo to the Life page
 
