@@ -41,7 +41,7 @@ In `index.html`, find `<ol class="news-list">` and add a block at the top:
 </li>
 ```
 
-Also update the "Now" card near the top (`<aside class="now-card">`) and its "Updated" line.
+Also update the "Now" card near the top (`<aside class="now-card">`).
 
 ### Add a publication
 

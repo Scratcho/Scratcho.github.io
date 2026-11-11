@@ -90,7 +90,7 @@ if (hero && window.matchMedia('(pointer: fine)').matches && !reducedMotion) {
 /* Rotating phrase in the hero */
 const rotatorWord = document.querySelector('.rotator-word');
 if (rotatorWord && !reducedMotion) {
-  const phrases = ['wearable robots', 'soft actuators', 'medical devices', 'health sensors'];
+  const phrases = ['wearable robots', 'soft actuators', 'medical devices', 'health monitoring sensors'];
   let index = 0;
   window.setInterval(() => {
     rotatorWord.classList.add('is-out');
