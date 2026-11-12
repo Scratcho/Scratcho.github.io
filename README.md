@@ -1,4 +1,4 @@
-# Junghyun Bae: academic website
+# Jung Hyun Bae: academic website
 
 A no-build site for GitHub Pages (`https://scratcho.github.io/`). Plain HTML, CSS, and JavaScript: edit a file, commit, push, and the site updates.
 
@@ -19,14 +19,14 @@ Then visit `http://localhost:8000`.
 - `styles.css`: layout, light and dark themes, responsive rules, print styling
 - `script.js`: menu, theme switch, scroll effects, project filter, project details dialog
 - `assets/images/`: portrait, project figures, personal photos, favicon
-- `assets/documents/junghyun-bae-cv.pdf`: the CV the site links to
+- `assets/documents/jung-hyun-bae-cv.pdf`: the CV the site links to
 - `assets/documents/*.pdf`: course project documents recovered from the old site
 
 ## Common updates
 
 ### Replace the CV
 
-Save the new CV as `assets/documents/junghyun-bae-cv.pdf` (same file name), so every CV link keeps working.
+Save the new CV as `assets/documents/jung-hyun-bae-cv.pdf` (same file name), so every CV link keeps working.
 
 ### Add a news item
 
@@ -53,7 +53,7 @@ In `index.html`, find `<ol class="pub-list">` and add a block (newest first):
   <div>
     <p class="pub-venue">Venue name</p>
     <h3><a href="https://doi.org/..." rel="noopener">Paper title</a></h3>
-    <p class="pub-authors">First Author, <strong>Junghyun Bae</strong>, Last Author</p>
+    <p class="pub-authors">First Author, <strong>Jung Hyun Bae</strong>, Last Author</p>
   </div>
   <span class="pub-type">Journal</span>
 </li>
